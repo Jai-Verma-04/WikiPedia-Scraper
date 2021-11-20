@@ -16,3 +16,6 @@ Website used: https://www.wikipedia.org/
 3. The article fetched is saved in .docx format.
 4. Further, the user also has the option to fetch only the summary for that topic or the complete wikipedia article.
 5. and, and, furthermore, the user can give a custom save path to save the file or by default save it at the current working directory.
+
+# HOW TO RUN?
+1. Just run wikipedia.py file and follow the instructions... :)
