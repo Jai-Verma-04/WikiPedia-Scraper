@@ -81,10 +81,12 @@ def change_dir():   #* Helping user to change the directory of the save file
             direct()   #* Another try at specifi=ying the location
         except FileNotFoundError:    #* If the save path isnt found after the second try, doc saves at default path
             print("Enough tries..Saving at defualt path instead")
-    
-    ask = int(input(f"Do you want to save at default or specified location?\n1. Default- '{getcwd()}' \n2. Give save path\n\
-Your choice: "))          #* Asking the user to specify the save location
-    
+    try:
+        ask = int(input(f"Do you want to save at default or specified location?\n1. Default- '{getcwd()}' \n2. Give save path\n\
+    Your choice: "))          #* Asking the user to specify the save location
+    except:
+        print("Try again")
+        
     try:
 
         if ask == 1:pass            #* Default location (Will save in the current working directory)

@@ -19,7 +19,7 @@ def main():     #* defining function for the main interface Window
         try:
             asking()
 
-        except ValueError:
+        except:
             print("Please choose between 1/2/3 only")
             asking()
 
