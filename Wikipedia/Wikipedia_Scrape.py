@@ -96,8 +96,3 @@ Your choice: "))          #* Asking the user to specify the save location
             print("Invalid option")
             print("Saving at default path instead..")
             pass
-
-try:
-    main()     #* Calling the main function to execute the program
-except Exception:      #* Error Handling
-    print("Please check your internet connection before trying again.")

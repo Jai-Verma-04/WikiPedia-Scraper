@@ -1,6 +1,7 @@
 from subprocess import call
 from time import sleep
 
+
 def main():     #* defining function for the main interface Window
 
     while True:
