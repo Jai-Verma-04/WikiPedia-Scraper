@@ -1,4 +1,4 @@
-from subprocess import call
+
 from time import sleep
 import  Wikipedia_Scrape, Wikipedia_Scrape_Random
 
