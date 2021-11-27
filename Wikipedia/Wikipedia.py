@@ -1,6 +1,6 @@
 from subprocess import call
 from time import sleep
-
+import  Wikipedia_Scrape, Wikipedia_Scrape_Random
 
 def main():     #* defining function for the main interface Window
 
@@ -27,8 +27,8 @@ def asking():     #* Selecting an option to be executed
     
     ask = int(input(">>> "))
 
-    if ask==1:call(["Python", "./Wikipedia/Wikipedia_Scrape_Random.py"])  #* Calling the python file for a random article
-    elif ask==2:call(["Python", "/Wikipedia/Wikipedia_Scrape.py"])       #* Calling the python file for user-defined article
+    if ask==1:Wikipedia_Scrape_Random.main()  #* Calling the python file for a random article
+    elif ask==2:Wikipedia_Scrape.main()      #* Calling the python file for user-defined article
     elif ask==3:exit()                                        #* Exiting the main program
     else:print("Invalid Choice!");main()
     
